@@ -20,10 +20,24 @@ bool result = WinTrust.VerifyEmbeddedSignature(@"C:\Windows\explorer.exe");
 ```
 
 ### Certificate
-Utility class to check if the file is signed.
+Utility class to check the `Certificate` file is signed, subject and issuer. 
 
 ```csharp
 bool result = Certificate.IsSignedFile(@"C:\Windows\explorer.exe");
+```
+
+If you want to get the subject or issuer of the file, you can use the following methods:
+ 
+``` csharp
+string subject = Certificate.GetSignedFileSubject(@"C:\Windows\explorer.exe");
+string issuer = Certificate.GetSignedFileIssuer(@"C:\Windows\explorer.exe");
+```
+
+If you want to get a specific field of the subject or issuer, you can use the following methods:
+
+``` csharp
+string communName = Certificate.GetSignedFileSubject(@"C:\Windows\explorer.exe", "cn"); // "Microsoft Windows"
+string organization = Certificate.GetSignedFileIssuer(@"C:\Windows\explorer.exe", "o"); // "Microsoft Corporation"
 ```
 
 ### Dummy Certificate
