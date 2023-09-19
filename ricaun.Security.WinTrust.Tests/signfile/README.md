@@ -1,10 +1,10 @@
-# signfile
+# Create `signfile` files
 
 ## Location
 
-The MakeCert.exe, pvk2pfx.exe and signtool.exe are located in the Windows SDK folder. For example:
+The `MakeCert.exe`, `pvk2pfx.exe` and `signtool.exe` are located in the Windows SDK folder. For example:
 ```
-C:\Program Files (x86)\Windows Kits\10\bin\x64-3\
+C:\Program Files (x86)\Windows Kits\10\bin\x64\
 ```
 
 ## Make cert and sign file
