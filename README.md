@@ -16,14 +16,14 @@ Simple package with the purpose of validating the signature of a file using the 
 Utility class to validate the signature of a file is trusted.
 
 ```csharp
-var result = WinTrust.VerifyEmbeddedSignature(@"C:\Windows\notepad.exe");
+var result = WinTrust.VerifyEmbeddedSignature(@"C:\Windows\explorer.exe");
 ```
 
 ### Certificate
 Utility class to check if the file is signed.
 
 ```csharp
-var result = Certificate.IsSignedFile(@"C:\Windows\notepad.exe");
+var result = Certificate.IsSignedFile(@"C:\Windows\explorer.exe");
 ```
 
 ## Release

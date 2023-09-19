@@ -25,5 +25,16 @@ namespace ricaun.Security.WinTrust.Tests
             var result = WinTrust.VerifyEmbeddedSignature(filePath);
             Assert.AreEqual(isSigned, result);
         }
+
+        [TestCase("C:\\Windows\\notepad.exe", false)]
+        [TestCase("C:\\Windows\\explorer.exe", true)]
+        public void VerifyEmbeddedSignaturePath_ShouldBe(string filePath, bool isSigned)
+        {
+            if (File.Exists(filePath) == false)
+                Assert.Ignore("File not found");
+
+            var result = WinTrust.VerifyEmbeddedSignature(filePath);
+            Assert.AreEqual(isSigned, result);
+        }
     }
 }
