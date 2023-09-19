@@ -10,6 +10,7 @@ namespace ricaun.Security.WinTrust.Tests
 
         [TestCase("ConsoleApp.exe", false)]
         [TestCase("ConsoleAppSigned.exe", true)]
+        [TestCase("ConsoleAppSignedNotTrusted.exe", true)]
         public void IsSignedFile_ShouldBe(string fileName, bool isSigned)
         {
             var filePath = Path.Combine(Directory, fileName);
@@ -19,11 +20,12 @@ namespace ricaun.Security.WinTrust.Tests
 
         [TestCase("ConsoleApp.exe", false)]
         [TestCase("ConsoleAppSigned.exe", true)]
-        public void VerifyEmbeddedSignature_ShouldBe(string fileName, bool isSigned)
+        [TestCase("ConsoleAppSignedNotTrusted.exe", false)]
+        public void VerifyEmbeddedSignature_ShouldBe(string fileName, bool isSignedTrusted)
         {
             var filePath = Path.Combine(Directory, fileName);
             var result = WinTrust.VerifyEmbeddedSignature(filePath);
-            Assert.AreEqual(isSigned, result);
+            Assert.AreEqual(isSignedTrusted, result);
         }
 
         [TestCase("C:\\Windows\\notepad.exe", false)]

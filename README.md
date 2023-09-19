@@ -26,6 +26,10 @@ Utility class to check if the file is signed.
 bool result = Certificate.IsSignedFile(@"C:\Windows\explorer.exe");
 ```
 
+### Dummy Certificate
+
+The [signfile.pfx](https://github.com/ricaun-io/ricaun.Security.WinTrust/ricaun.Security.WinTrust.Tests/signfile) is a dummy certificate created to sign the `ConsoleAppSignedNotTrusted.exe` file and test the `WinTrust.VerifyEmbeddedSignature` method.
+
 ## Release
 
 * [Latest release](https://github.com/ricaun-io/ricaun.Security.WinTrust/releases/latest)
