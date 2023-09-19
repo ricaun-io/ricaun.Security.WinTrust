@@ -40,7 +40,17 @@ string communName = Certificate.GetSignedFileSubject(@"C:\Windows\explorer.exe",
 string organization = Certificate.GetSignedFileIssuer(@"C:\Windows\explorer.exe", "o"); // "Microsoft Corporation"
 ```
 
-### Dummy Certificate
+Some of the most common [RDNs](https://docs.oracle.com/cd/E24191_01/common/tutorials/authz_cert_attributes.html) and their explanations are as follows: 
+
+```
+CN: CommonName
+O: Organization
+L: Locality
+S: StateOrProvinceName
+C: CountryName
+```
+
+## Dummy Certificate
 
 The [signfile.pfx](ricaun.Security.WinTrust.Tests/signfile) is a dummy certificate created to sign the `ConsoleAppSignedNotTrusted.exe` file and test the `WinTrust.VerifyEmbeddedSignature` method.
 
