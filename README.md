@@ -4,8 +4,7 @@
 [![Nuke](https://img.shields.io/badge/Nuke-Build-blue)](https://nuke.build/)
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Build](https://github.com/ricaun-io/ricaun.Security.WinTrust/actions/workflows/Build.yml/badge.svg)](https://github.com/ricaun-io/ricaun.Security.WinTrust/actions)
-[![.NET Framework 4.5](https://img.shields.io/badge/.NET%20Framework%204.5-blue.svg)](https://github.com/ricaun-io/ricaun.Security.WinTrust)
-[![.NET Standard 2.0](https://img.shields.io/badge/.NET%20Standard%202.0-blue.svg)](https://github.com/ricaun-io/ricaun.Security.WinTrust)
+[![nuget](https://img.shields.io/nuget/v/ricaun.Security.WinTrust?logo=nuget&label=nuget&color=blue)](https://www.nuget.org/packages/ricaun.Security.WinTrust)
 
 ## Description
 
