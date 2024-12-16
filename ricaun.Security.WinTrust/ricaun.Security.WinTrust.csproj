@@ -33,7 +33,7 @@
 
   <PropertyGroup>
     <PackageId>ricaun.Security.WinTrust</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
     <ProjectGuid>{AC121D4A-F00B-4B94-AD1B-ED7665C4803A}</ProjectGuid>
   </PropertyGroup>
 
